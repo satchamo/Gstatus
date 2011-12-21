@@ -1,0 +1,61 @@
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map_canvas { 
+    height: 100%; 
+    width: 100%; 
+    position:absolute;
+}
+
+#money {
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:10;
+    padding-right:1em;
+    padding-top:1em;
+    font-family:Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+}
+
+#datetime {
+    position:absolute;
+    right:.1em;
+    bottom:.5em;
+    z-index:10;
+    font-family:Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+    font-size:3em;
+    color:#fff;
+}
+
+#money h1 {
+    font-size:3em;
+    font-weight:normal;
+    margin:0;
+}
+
+#money p {
+    margin:0;
+}
+
+.money-block {
+    margin-bottom:1em;
+}
+
+.total-cents {
+    font-size:.4em;
+    border-bottom:1px solid #444;
+    vertical-align:super;
+}
+
+.dollar-sign {
+    font-size:.75em;
+    vertical-align:middle;
+}
+
+.total-dollars {
+}
+
+.label {
+    font-size:.8em;
+    color:#999;
+    vertical-align:middle;
+}

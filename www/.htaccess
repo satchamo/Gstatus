@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule post/(.*)/? view.php?mod_url=$1
+RedirectMatch 301 blog/.*?/(.*)/? /post/$1 
