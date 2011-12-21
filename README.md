@@ -32,7 +32,7 @@ After you get it working, it looks pretty cool.
 Setup
 =
 Database
-==
+-
 Create a database called IpQueue:
 
     CREATE DATABASE `IpQueue`;
@@ -57,25 +57,25 @@ Create two tables in the database:
     ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 GeoIP
-==
+-
 gunzip the GeoLiteCity.dat.gz file and move it to a place where this program can access it (/usr/share/GeoIP for example)
 
 listen.py
-==
+-
 Change the first few lines of listen.py to match your database host/username/password and location of your GeoLiteCity.dat file. Also change the LISTEN_ON ip address to match that of your computer.
 
 If you are running listen.py on a computer behind a router or firewall, make sure you open up port 8001, and/or forward it to your computer.
 
 update.php
-==
+-
 Change the first lines to match your database host/username/password.
 
 js/config.js
-==
+-
 Add your sites to the configuration, specifying the colors of the dot you want to represent the site, whether you want it to appear on the sidebar where money totals are displayed, and its label.
 
 index.html
-==
+-
 Replace YOUR_API_KEY with your API key from Google.
 
 Starting the Application
