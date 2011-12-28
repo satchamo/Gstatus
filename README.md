@@ -66,15 +66,15 @@ Change the first few lines of listen.py to match your database host/username/pas
 
 If you are running listen.py on a computer behind a router or firewall, make sure you open up port 8001, and/or forward it to your computer.
 
-update.php
+www/update.php
 -
 Change the first lines to match your database host/username/password.
 
-js/config.js
+www/js/config.js
 -
 Add your sites to the configuration, specifying the colors of the dot you want to represent the site, whether you want it to appear on the sidebar where money totals are displayed, and its label.
 
-index.html
+www/index.html
 -
 Replace YOUR_API_KEY with your API key from Google.
 
