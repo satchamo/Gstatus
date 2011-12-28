@@ -4,7 +4,7 @@ Gstatus displays the latest visitors to your websites on top of a Google Map, th
 
 Requirements and Dependencies 
 =
-* Python - 2.6.5 (probably on 2.5.x)
+* Python - 2.6.5 (probably works on 2.5.x)
 * PHP - 5.x (probably works on 4.x) 
 * GeoIP for Python (which itself requires the C bindings) - `apt-get install python-geoip` should cover it
 * GeoIP City Database - http://geolite.maxmind.com/download/geoip/database/ (called 'GeoLiteCity.dat.gz' -- be sure to gunzip it)
@@ -85,12 +85,14 @@ Run `python listen.py` (hopefully you won't get any errors)!
 Talking to the Application
 =
 You can use the nc command to send simple messages to the application. Some examples (make sure you replace the IP address after 'nc' to your IP):
-echo -e "8.8.8.8 default.com\n" | nc YOUR_IP 8001
+    
+    echo -e "8.8.8.8 default.com\n" | nc YOUR_IP 8001
 
 If you now open up index.html in your browser, you should see a dot over California.
 
-To send a money message (make sure you replace YOUR-SITE.com with a site listen in js/config.js):
-echo -e "money YOUR-SITE.com 25.10\n" | nc YOUR_IP 8001
+To send a money message (make sure you replace YOUR-SITE.com with a site listed in js/config.js):
+
+    echo -e "money YOUR-SITE.com 25.10\n" | nc YOUR_IP 8001
 
 index.html should now show that YOUR-SITE.com earned $25.10.
 
